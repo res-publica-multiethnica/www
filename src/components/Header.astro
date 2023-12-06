@@ -1,0 +1,24 @@
+---
+import Navigation from './Navigation.astro';
+
+const { pageTitle } = Astro.props;
+---
+<style>
+    header {
+        background-color: #EC5A2A;
+    }
+    nav {
+        background-color: #666666;
+    }
+</style>
+
+<header>
+    <div class="grid grid-cols-2">
+        <div><p>Fundacja <strong>Res Publica Multiethnica</strong></p></div>
+        <div class="flex justify-end"><p class="podtytul">{pageTitle}</p></div>
+    </div>
+    
+    <nav>         
+        <Navigation />
+    </nav>
+</header>

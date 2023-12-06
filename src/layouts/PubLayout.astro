@@ -1,0 +1,10 @@
+---
+import BaseLayout from './BaseLayout.astro';
+const { frontmatter } = Astro.props;
+---
+<BaseLayout pageTitle={frontmatter.title}>
+    <p><img src={"/okladki/" + frontmatter.imageBig} width="300" height="430"><br>
+        <span class="podpis">{frontmatter.description}</span></p>
+    
+    <slot />
+</BaseLayout>

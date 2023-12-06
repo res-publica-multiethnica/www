@@ -1,0 +1,98 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin: 0px;
+	background-color: #000000;
+	color: #FFFFFF;
+}
+ul {
+  @apply list-disc;
+  @apply list-inside;
+}
+.small {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #FFFFFF;
+}
+.podpis {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #EC5A2A;
+}
+.miniatura {
+	text-align: center;
+	margin: 2em;
+}
+.podtytul {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #FFFFFF;
+	text-align: right;
+	letter-spacing: 0.5em;
+}
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 2rem;
+	font-weight: normal;
+	color: #FFFFFF;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+h2 {
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.smallLink {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #EC5A2A;
+}
+
+li {
+  margin-left: 1rem;
+  line-height: 1.8;
+}
+
+/* nav styles */
+
+.nav-links {
+    width: 100%;
+    top: 5rem;
+    left: 1rem;
+    display: none;
+    margin: 0;
+  }
+  
+  .nav-links a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a:focus {
+    background-color: #ff9776;
+  }
+  
+  .expanded {
+    display: unset;
+  }
+  
+  @media screen and (min-width: 636px) {
+    .nav-links {
+      margin-left: 0em;
+      display: block;
+      position: static;
+      width: auto;
+      background: none;
+    }
+  
+    .nav-links a {
+      display: inline-block;
+      padding: 15px 20px;
+    }
+  
+  }

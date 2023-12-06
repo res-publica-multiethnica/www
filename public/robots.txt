@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.res-publica-multiethnica.pl/sitemap-index.xml

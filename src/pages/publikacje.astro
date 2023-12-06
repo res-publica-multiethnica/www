@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const allPubs = await Astro.glob('../pages/publikacje/*.md');
+allPubs.sort((a, b) => b.frontmatter.pubYear - a.frontmatter.pubYear);
+---
+<BaseLayout pageTitle="Publikacje">
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        {allPubs.map((pub) => <div><a href={pub.url}><img class="h-auto w-72 rounded-lg" src={"/okladki/" + pub.frontmatter.imageBig} border="0"></a><br><span class="podpis">{pub.frontmatter.description}</span></div>)}
+    </div>
+    
+</BaseLayout>
